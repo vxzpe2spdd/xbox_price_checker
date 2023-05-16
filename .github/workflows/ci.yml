@@ -21,6 +21,7 @@ jobs:
           regexPrice='Начиная с<\/span> <span class="pprice ">([0-9.]+)<\/span> (.{0,4}) <\/div>'
           regexCountry='<img src="\/assets\/img\/flag\/[a-zA-Z-]+.png" alt="([a-zA-Z-]+)" width="16" height="16" \/>'
           regexNameYear='<h2 class="game-title">(.+)<\/h2> <span class="game-date">(\([0-9]+\))<\/span>'
+          regexDiscount='<span class="badge badge-success">Discount : -([0-9]+)%<\/span>'
 
           while read gameId; do
             curl \
@@ -43,14 +44,18 @@ jobs:
                 gameName="${BASH_REMATCH[1]}"
                 gameYear="${BASH_REMATCH[2]}"
             fi
+            if [[ $(cat ${gameId}.txt) =~ $regexDiscount ]]
+            then
+                priceDiscount=" **–${BASH_REMATCH[1]}%**"
+            fi
             echo "${price} ${currency} ${country}"
 
             checkerURL="https://xbox-store-checker.com/en/game/compare/a/${gameId}"
             xboxURL="https://www.xbox.com/ru-RU/games/store/a/${gameId}"
             multiplier="1.7"
-            realPrice="result=$(bc -l <<<"${price}*${multiplier}")"
+            realPrice=$(bc -l <<<"${price}*${multiplier}")
 
-            echo "| ${gameId} | ${gameName} ${gameYear} | [URL](${checkerURL}) | [URL](${xboxURL}) | ${price} ${currency} | ${realPrice} | ${country} |" >> table.md
+            echo "| ${gameId} | ${gameName} ${gameYear} | [URL](${checkerURL}) | [URL](${xboxURL}) | ${price} ${currency}${priceDiscount} | ${realPrice} | ${country} |" >> table.md
           done <ids.txt
 
       - name: Commit files.
