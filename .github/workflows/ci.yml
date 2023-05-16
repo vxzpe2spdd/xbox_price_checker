@@ -10,6 +10,16 @@ jobs:
       - uses: actions/checkout@v3.1.0
       - name: Read.
         run: |
-          while read p; do
-            echo "$p"
+          cookie="has_adblock=0; \
+            EU_COOKIE_LAW_CONSENT=true; \
+            currency_13=RUB; \
+            language_13=ru; \
+            giftcardAllowed_4=0; \
+            adblock_check_count=4; \
+            support_us_count=4;"
+
+          while read gameId; do
+            curl -v --cookie $cookie https://xbox-store-checker.com/ru/game/compare/a/$${{ gameId }} > $${{ gameId }}.txt
+            echo "$gameId"
+            cat ${{ gameId }}.txt
           done <ids.txt
