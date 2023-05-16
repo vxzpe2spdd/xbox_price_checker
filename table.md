@@ -65,3 +65,4 @@
 | 9mvm12tggp7c   | GIGA WRECKER ALT. (2019)   | [URL](https://xbox-store-checker.com/en/game/compare/a/9mvm12tggp7c)   | [URL](https://www.xbox.com/ru-RU/games/store/a/9mvm12tggp7c)   | 37.6 p.   | 63.92 p.   |  **–67%**   | Argentina   |
 | c04lg04zjp6v   | Rogue Stormers & Giana Sisters Bundle (2016)   | [URL](https://xbox-store-checker.com/en/game/compare/a/c04lg04zjp6v)   | [URL](https://www.xbox.com/ru-RU/games/store/a/c04lg04zjp6v)   | 8.8 p.   | 14.96 p.   |  **–90%**   | Argentina   |
 | brz9553vppbd   | Darksiders Genesis (2020)   | [URL](https://xbox-store-checker.com/en/game/compare/a/brz9553vppbd)   | [URL](https://www.xbox.com/ru-RU/games/store/a/brz9553vppbd)   | 64.8 p.   | 110.16 p.   |  **–70%**   | Argentina   |
+| br36zlxrtk08   | Super Dungeon Bros (2016)   | [URL](https://xbox-store-checker.com/en/game/compare/a/br36zlxrtk08)   | [URL](https://www.xbox.com/ru-RU/games/store/a/br36zlxrtk08)   | 7.2 p.   | 12.24 p.   |  **–90%**   | Argentina   |
