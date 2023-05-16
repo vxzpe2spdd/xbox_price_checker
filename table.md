@@ -61,3 +61,4 @@
 | 9p0478ztxlz4   | Blasphemous (2019)   | [URL](https://xbox-store-checker.com/en/game/compare/a/9p0478ztxlz4)   | [URL](https://www.xbox.com/ru-RU/games/store/a/9p0478ztxlz4)   | 31.2 p.   | 53.04 p.   |  **–75%**   | Argentina   |
 | bsvzcmgzv52l   | Darksiders III (2018)   | [URL](https://xbox-store-checker.com/en/game/compare/a/bsvzcmgzv52l)   | [URL](https://www.xbox.com/ru-RU/games/store/a/bsvzcmgzv52l)   | 152.79 p.   | 259.743 p.   |  **–70%**   | Argentina   |
 | c30z07t9q9ct   | Hard Corps: Uprising (2011)   | [URL](https://xbox-store-checker.com/en/game/compare/a/c30z07t9q9ct)   | [URL](https://www.xbox.com/ru-RU/games/store/a/c30z07t9q9ct)   | 9.6 p.   | 16.32 p.   |  **–67%**   | Argentina   |
+| 9p0qqjt4d23s   | Golden Force (2021)   | [URL](https://xbox-store-checker.com/en/game/compare/a/9p0qqjt4d23s)   | [URL](https://www.xbox.com/ru-RU/games/store/a/9p0qqjt4d23s)   | 99.2 p.   | 168.64 p.   |  **–67%**   | Argentina   |
