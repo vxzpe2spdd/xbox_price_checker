@@ -10,16 +10,19 @@ jobs:
       - uses: actions/checkout@v3.1.0
       - name: Read.
         run: |
-          cookie="has_adblock=0; \
-            EU_COOKIE_LAW_CONSENT=true; \
-            currency_13=RUB; \
-            language_13=ru; \
-            giftcardAllowed_4=0; \
-            adblock_check_count=4; \
-            support_us_count=4;"
+          cookie="has_adblock=0; EU_COOKIE_LAW_CONSENT=true; currency_13=RUB; language_13=ru; giftcardAllowed_4=0; adblock_check_count=4; support_us_count=4;"
+
+          regex="Начиная с<\/span> <span class="pprice ">([0-9.]+)<\/span> (.{0,4}) <\/div>"
 
           while read gameId; do
             curl -v --cookie $cookie https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
             echo "$gameId"
-            cat ${gameId}.txt
+            if [[ $(cat ${gameId}.txt) =~ $regex ]]
+            then
+                price="${BASH_REMATCH[1]}"
+                currency="${BASH_REMATCH[2]}"
+                echo "${price} ${currency}"
+            else
+                echo "$f doesn't match" >&2 # this could get noisy if there are a lot of non-matching files
+            fi
           done <ids.txt
