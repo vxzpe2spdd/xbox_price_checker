@@ -47,7 +47,8 @@ jobs:
 
             checkerURL="https://xbox-store-checker.com/en/game/compare/a/${gameId}"
             xboxURL="https://www.xbox.com/ru-RU/games/store/a/${gameId}"
-            realPrice="result=$(bc -l <<<"${price}*${1.7}")"
+            multiplier="1.7"
+            realPrice="result=$(bc -l <<<"${price}*${multiplier}")"
 
             echo "| ${gameId} | ${gameName} ${gameYear} | [URL](${checkerURL}) | [URL](${xboxURL}) | ${price} ${currency} | ${realPrice} | ${country} |" >> table.md
           done <ids.txt
