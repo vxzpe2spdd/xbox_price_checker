@@ -1,1 +1,15 @@
+name: Xbox Price Checker
 
+on: [push]
+
+jobs:
+  linux:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.1.0
+      - name: Read.
+        run: |
+          while read p; do
+            echo "$p"
+          done <ids.txt
