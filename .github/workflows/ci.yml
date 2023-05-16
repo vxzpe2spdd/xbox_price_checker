@@ -19,7 +19,7 @@ jobs:
             support_us_count=4;"
 
           while read gameId; do
-            curl -v --cookie $cookie https://xbox-store-checker.com/ru/game/compare/a/$${{ gameId }} > $${{ gameId }}.txt
+            curl -v --cookie $cookie https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
             echo "$gameId"
-            cat ${{ gameId }}.txt
+            cat ${gameId}.txt
           done <ids.txt
