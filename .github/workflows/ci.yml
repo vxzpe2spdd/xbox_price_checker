@@ -23,7 +23,11 @@ jobs:
           regexNameYear='<h2 class="game-title">(.+)<\/h2> <span class="game-date">(\([0-9]+\))<\/span>'
 
           while read gameId; do
-            curl --cookie "${cookie}" https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
+            curl \
+              --cookie "${cookie}" \
+              -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15' \
+              -H 'Accept-Language: ru-RU,ru;q=0.9' \
+              https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
             echo "$gameId"
             if [[ $(cat ${gameId}.txt) =~ $regexPrice ]]
             then
