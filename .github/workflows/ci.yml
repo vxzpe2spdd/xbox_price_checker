@@ -35,8 +35,8 @@ jobs:
             fi
             echo "${price} ${currency} ${country}"
 
-            checkerURL = "https://xbox-store-checker.com/en/game/compare/a/${gameId}"
-            xboxURL = "https://www.xbox.com/ru-RU/games/store/a/${gameId}"
+            checkerURL="https://xbox-store-checker.com/en/game/compare/a/${gameId}"
+            xboxURL="https://www.xbox.com/ru-RU/games/store/a/${gameId}"
             echo "| ${gameId} | Name | [URL](${checkerURL}) | [URL](xboxURL) | ${price} ${currency} | ${country} |" >> table.md
           done <ids.txt
 
