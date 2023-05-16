@@ -15,7 +15,7 @@ jobs:
           regex='Начиная с<\/span> <span class="pprice ">([0-9.]+)<\/span> (.{0,4}) <\/div>'
 
           while read gameId; do
-            curl -v --cookie $cookie https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
+            curl --cookie $cookie https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
             echo "$gameId"
             if [[ $(cat ${gameId}.txt) =~ $regex ]]
             then
