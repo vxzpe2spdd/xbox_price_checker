@@ -1,6 +1,8 @@
 name: Xbox Price Checker
 
 on:
+  schedule:
+    - cron: '0 0 * * *'  # Every day at midnight.
   push:
     paths-ignore:
       - '**.md'
