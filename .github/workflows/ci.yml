@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v3.1.0
       - name: Read.
         run: |
-          echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Original Currency | Country |" > table.md
-          echo "|-|-|-|-|-|-|-|-|-|" >> table.md
+          echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Country |" > table.md
+          echo "|-|-|-|-|-|-|-|-|" >> table.md
 
           cookie="has_adblock=0; EU_COOKIE_LAW_CONSENT=true; currency_13=RUB; language_13=ru; giftcardAllowed_4=0; adblock_check_count=4; support_us_count=4;"
 
@@ -69,7 +69,6 @@ jobs:
             | ${price} ${currency} \
             | ${realPrice} ${currency} \
             | ${priceDiscount} \
-            | ${originalCur} \
             | ${country} \
             |" >> table.md
           done <ids.txt
