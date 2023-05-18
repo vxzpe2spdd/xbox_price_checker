@@ -47,6 +47,8 @@ jobs:
             if [[ $(cat ${gameId}.txt) =~ $regexDiscount ]]
             then
                 priceDiscount=" **–${BASH_REMATCH[1]}%**"
+            else
+                priceDiscount=""
             fi
             echo "${price} ${currency} ${country}"
 
