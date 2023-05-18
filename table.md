@@ -68,3 +68,4 @@
 | br36zlxrtk08   | Super Dungeon Bros (2016)   | [URL](https://xbox-store-checker.com/en/game/compare/a/br36zlxrtk08)   | [URL](https://www.xbox.com/ru-RU/games/store/a/br36zlxrtk08)   | 7.18 p.   | 12.206 p.   |  **–90%**   | Argentina   |
 | c0w8drkpv6p4   | Sonic Generations (2011)   | [URL](https://xbox-store-checker.com/en/game/compare/a/c0w8drkpv6p4)   | [URL](https://www.xbox.com/ru-RU/games/store/a/c0w8drkpv6p4)   | 86.13 p.   | 146.421 p.   |  **–90%**   | Argentina   |
 | 9mv537xvlvxr   | Death's Gambit: Afterlife (2020)   | [URL](https://xbox-store-checker.com/en/game/compare/a/9mv537xvlvxr)   | [URL](https://www.xbox.com/ru-RU/games/store/a/9mv537xvlvxr)   | 98.09 p.   | 166.753 p.   |  **–90%**   | Argentina   |
+| 9nkk55qgmn9d   | Vernal Edge (2023)   | [URL](https://xbox-store-checker.com/en/game/compare/a/9nkk55qgmn9d)   | [URL](https://www.xbox.com/ru-RU/games/store/a/9nkk55qgmn9d)   | 109.25 p.   | 185.725 p.   |  **–90%**   | Argentina   |
