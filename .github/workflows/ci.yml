@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v3.1.0
       - name: Read.
         run: |
-          echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Country |" > table.md
-          echo "|-|-|-|-|-|-|-|-|" >> table.md
+          echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Original Currency | Country |" > table.md
+          echo "|-|-|-|-|-|-|-|-|-|" >> table.md
 
           cookie="has_adblock=0; EU_COOKIE_LAW_CONSENT=true; currency_13=RUB; language_13=ru; giftcardAllowed_4=0; adblock_check_count=4; support_us_count=4;"
 
@@ -22,6 +22,7 @@ jobs:
           regexCountry='<img src="\/assets\/img\/flag\/[a-zA-Z-]+.png" alt="([a-zA-Z-]+)" width="16" height="16" \/>'
           regexNameYear='<h2 class="game-title">(.+)<\/h2> <span class="game-date">(\([0-9]+\))<\/span>'
           regexDiscount='<span class="badge badge-success">Discount : -([0-9]+)%<\/span>'
+          regexOriginalCurrency='pprice price-not-convert-base">([0-9]+)<\/span> .+ (\([a-zA-Z]+\))'
 
           while read gameId; do
             curl \
@@ -44,6 +45,10 @@ jobs:
                 gameName="${BASH_REMATCH[1]}"
                 gameYear="${BASH_REMATCH[2]}"
             fi
+            if [[ $(cat ${gameId}.txt) =~ $regexOriginalCurrency ]]
+            then
+                originalCur="${BASH_REMATCH[1]} ${BASH_REMATCH[2]}"
+            fi
             if [[ $(cat ${gameId}.txt) =~ $regexDiscount ]]
             then
                 priceDiscount=" **–${BASH_REMATCH[1]}%**"
@@ -64,6 +69,7 @@ jobs:
             | ${price} ${currency} \
             | ${realPrice} ${currency} \
             | ${priceDiscount} \
+            | ${originalCur} \
             | ${country} \
             |" >> table.md
           done <ids.txt
