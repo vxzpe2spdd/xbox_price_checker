@@ -97,8 +97,7 @@ jobs:
             if grep -q ${gameId} wanted_ids.txt; then
               sumARSOfWantedGames=$(bc -l <<<"${originalCurPrice}+${sumARSOfWantedGames}")
 
-              echo "\
-              | ${gameName} ${gameYear} \
+              echo "| ${gameName} ${gameYear} \
               | [URL](https://www.xbox.com/es-AR/games/store/a/${gameId}) \
               | ${realPrice} ${currency} \
               | ${originalCur} ${originalCurPrice} \
