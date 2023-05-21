@@ -18,6 +18,9 @@ jobs:
           echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Ends in | Original Cur | Country |" > table.md
           echo "|-|-|-|-|-|-|-|-|-|-|" >> table.md
 
+          echo "| Name | Xbox ARS URL | Real Price | Original Cur |" > wanted_table.md
+          echo "|-|-|-|-|" >> wanted_table.md
+
           cookie="has_adblock=0; EU_COOKIE_LAW_CONSENT=true; currency_13=RUB; language_13=ru; giftcardAllowed_4=0; adblock_check_count=4; support_us_count=4;"
 
           userAgent='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15'
@@ -27,6 +30,8 @@ jobs:
           regexNameYear='<h2 class="game-title">(.+)<\/h2> <span class="game-date">(\([0-9]+\))<\/span>'
           regexDiscount='<span class="badge badge-success">Discount : -([0-9]+)%<\/span>'
           regexOriginalCurrency='pprice price-not-convert-base">([0-9]+)<\/span> .+ (\([a-zA-Z]+\))'
+
+          sumARSOfWantedGames=0
 
           while read gameId; do
             curl \
@@ -73,9 +78,10 @@ jobs:
             echo "${price} ${currency} ${country}"
 
             checkerURL="https://xbox-store-checker.com/en/game/compare/a/${gameId}"
-            xboxURL="https://www.xbox.com/ru-RU/games/store/a/${gameId}"
+            xboxURL="https://www.xbox.com/es-AR/games/store/a/${gameId}"
             multiplier="0.6632"
             realPrice=$(bc -l <<<"${originalCurPrice}*${multiplier}")
+            sumARSOfWantedGames=$(bc -l <<<"${originalCurPrice}+${sumARSOfWantedGames}")
 
             echo "| ${gameId} \
             | ${gameName} ${gameYear} \
@@ -88,13 +94,24 @@ jobs:
             | ${originalCur} ${originalCurPrice} \
             | ${country} \
             |" >> table.md
+
+            echo "| ${gameId} \
+            | ${gameName} ${gameYear} \
+            | [URL](https://www.xbox.com/es-AR/games/store/a/${gameId}) \
+            | ${realPrice} ${currency} \
+            | ${originalCur} ${originalCurPrice} \
+            |" >> wanted_table.md
+
           done <ids.txt
+
+          echo "Sum: ${sumARSOfWantedGames}." >> wanted_table.md
 
       - name: Commit files.
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add table.md
+          git add wanted_table.md
           git commit -a -m "Updated table on $(date)"
       - name: Push changes.
         uses: ad-m/github-push-action@master
