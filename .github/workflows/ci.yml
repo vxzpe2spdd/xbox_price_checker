@@ -38,20 +38,15 @@ jobs:
             apiJsonRoot="['Products'][0]['DisplaySkuAvailabilities'][0]['Availabilities'][0]"
             apiJsonPrice="${apiJsonRoot}['OrderManagementData']['Price']"
             apiJsonConditions="${apiJsonRoot}['Conditions']['EndDate']"
-            originalCurPrice=$(curl \
+            apiResponse=$(curl \
               -X POST \
               -d "productIds=${gameId}" \
-              https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop \
+              https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop)
+            originalCurPrice=$(echo "${apiResponse}" \
             | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonPrice}['ListPrice'])")
-            originalCur=$(curl \
-              -X POST \
-              -d "productIds=${gameId}" \
-              https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop \
+            originalCur=$(echo "${apiResponse}" \
             | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonPrice}['CurrencyCode'])")
-            priceDiscountEnds=$(curl \
-              -X POST \
-              -d "productIds=${gameId}" \
-              https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop \
+            priceDiscountEnds=$(echo "${apiResponse}" \
             | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonConditions})")
 
             echo "$gameId"
