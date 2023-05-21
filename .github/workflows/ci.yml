@@ -74,8 +74,8 @@ jobs:
 
             checkerURL="https://xbox-store-checker.com/en/game/compare/a/${gameId}"
             xboxURL="https://www.xbox.com/ru-RU/games/store/a/${gameId}"
-            multiplier="1.7"
-            realPrice=$(bc -l <<<"${price}*${multiplier}")
+            multiplier="0.6632"
+            realPrice=$(bc -l <<<"${originalCurPrice}*${multiplier}")
 
             echo "| ${gameId} \
             | ${gameName} ${gameYear} \
