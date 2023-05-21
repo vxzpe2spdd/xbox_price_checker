@@ -42,4 +42,5 @@
 | Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 15.18728 p.     | ARS 22.9     |
 | Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 12.037080 p.     | ARS 18.15     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 105.84672 p.     | ARS 159.6     |
-Sum: 4209.07.
+| Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 49.640520 p.     | ARS 74.85     |
+Sum: 4283.92.
