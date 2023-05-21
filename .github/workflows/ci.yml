@@ -67,7 +67,7 @@ jobs:
             fi
             if [[ $(cat "xbox.com_${gameId}.txt") =~ $regexDiscountEnds ]]
             then
-                priceDiscountEnds="BASH_REMATCH[1]"
+                priceDiscountEnds="${BASH_REMATCH[1]}"
             else
                 priceDiscountEnds=""
             fi
