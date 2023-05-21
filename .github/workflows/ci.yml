@@ -27,7 +27,6 @@ jobs:
           regexNameYear='<h2 class="game-title">(.+)<\/h2> <span class="game-date">(\([0-9]+\))<\/span>'
           regexDiscount='<span class="badge badge-success">Discount : -([0-9]+)%<\/span>'
           regexOriginalCurrency='pprice price-not-convert-base">([0-9]+)<\/span> .+ (\([a-zA-Z]+\))'
-          regexDiscountEnds='ends in ([a-zA-Z0-9 ]+)"><svg xmlns="'
 
           while read gameId; do
             curl \
@@ -36,21 +35,24 @@ jobs:
               -H 'Accept-Language: ru-RU,ru;q=0.9' \
               https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
 
-            curl \
-              -H "${userAgent}" \
-              https://www.xbox.com/en-us/games/store/a/${gameId} > "xbox.com_${gameId}.txt"
-
-            apiJson="['Products'][0]['DisplaySkuAvailabilities'][0]['Availabilities'][0]['OrderManagementData']['Price']"
+            apiJsonRoot="['Products'][0]['DisplaySkuAvailabilities'][0]['Availabilities'][0]"
+            apiJsonPrice="${apiJsonRoot}['OrderManagementData']['Price']"
+            apiJsonConditions="${apiJsonRoot}['Conditions']['EndDate']"
             originalCurPrice=$(curl \
               -X POST \
               -d "productIds=${gameId}" \
               https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop \
-            | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJson}['ListPrice'])")
+            | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonPrice}['ListPrice'])")
             originalCur=$(curl \
               -X POST \
               -d "productIds=${gameId}" \
               https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop \
-            | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJson}['CurrencyCode'])")
+            | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonPrice}['CurrencyCode'])")
+            priceDiscountEnds=$(curl \
+              -X POST \
+              -d "productIds=${gameId}" \
+              https://storeedgefd.dsx.mp.microsoft.com/v8.0/sdk/products\?market\=AR\&locale\=es-AR\&deviceFamily\=Windows.Desktop \
+            | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonConditions})")
 
             echo "$gameId"
             if [[ $(cat ${gameId}.txt) =~ $regexPrice ]]
@@ -76,12 +78,6 @@ jobs:
                 priceDiscount=" **–${BASH_REMATCH[1]}%**"
             else
                 priceDiscount=""
-            fi
-            if [[ $(cat "xbox.com_${gameId}.txt") =~ $regexDiscountEnds ]]
-            then
-                priceDiscountEnds="${BASH_REMATCH[1]}"
-            else
-                priceDiscountEnds=""
             fi
             echo "${price} ${currency} ${country}"
 
