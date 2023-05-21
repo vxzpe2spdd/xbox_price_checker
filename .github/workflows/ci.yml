@@ -47,7 +47,7 @@ jobs:
             originalCur=$(echo "${apiResponse}" \
             | python3 -c "import sys, json; print(json.load(sys.stdin)${apiJsonPrice}['CurrencyCode'])")
             priceDiscountEnds=$(echo "${apiResponse}" \
-            | python3 -c "import sys, json; out=(json.load(sys.stdin)${apiJsonConditions}); print('' if out.startswith(999) else out)")
+            | python3 -c "import sys, json; out=str(json.load(sys.stdin)${apiJsonConditions}); print('' if out.startswith(999) else out)")
 
             echo "$gameId"
             if [[ $(cat ${gameId}.txt) =~ $regexPrice ]]
