@@ -15,23 +15,31 @@ jobs:
       - uses: actions/checkout@v3.1.0
       - name: Read.
         run: |
-          echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Country |" > table.md
-          echo "|-|-|-|-|-|-|-|-|" >> table.md
+          echo "| ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Ends in | Country |" > table.md
+          echo "|-|-|-|-|-|-|-|-|-|" >> table.md
 
           cookie="has_adblock=0; EU_COOKIE_LAW_CONSENT=true; currency_13=RUB; language_13=ru; giftcardAllowed_4=0; adblock_check_count=4; support_us_count=4;"
+
+          userAgent='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15'
 
           regexPrice='Начиная с<\/span> <span class="pprice ">([0-9.]+)<\/span> (.{0,4}) <\/div>'
           regexCountry='<img src="\/assets\/img\/flag\/[a-zA-Z-]+.png" alt="([a-zA-Z-]+)" width="16" height="16" \/>'
           regexNameYear='<h2 class="game-title">(.+)<\/h2> <span class="game-date">(\([0-9]+\))<\/span>'
           regexDiscount='<span class="badge badge-success">Discount : -([0-9]+)%<\/span>'
           regexOriginalCurrency='pprice price-not-convert-base">([0-9]+)<\/span> .+ (\([a-zA-Z]+\))'
+          regexDiscountEnds='ends in ([a-zA-Z0-9 ]+)"><svg xmlns="'
 
           while read gameId; do
             curl \
               --cookie "${cookie}" \
-              -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15' \
+              -H "${userAgent}" \
               -H 'Accept-Language: ru-RU,ru;q=0.9' \
               https://xbox-store-checker.com/ru/game/compare/a/${gameId} > ${gameId}.txt
+
+            curl \
+              -H "${userAgent}" \
+              https://www.xbox.com/en-us/games/store/a/${gameId} > "xbox.com_${gameId}.txt"
+
             echo "$gameId"
             if [[ $(cat ${gameId}.txt) =~ $regexPrice ]]
             then
@@ -57,6 +65,12 @@ jobs:
             else
                 priceDiscount=""
             fi
+            if [[ $(cat "xbox.com_${gameId}.txt") =~ $regexDiscountEnds ]]
+            then
+                priceDiscountEnds="BASH_REMATCH[1]"
+            else
+                priceDiscountEnds=""
+            fi
             echo "${price} ${currency} ${country}"
 
             checkerURL="https://xbox-store-checker.com/en/game/compare/a/${gameId}"
@@ -71,6 +85,7 @@ jobs:
             | ${price} ${currency} \
             | ${realPrice} ${currency} \
             | ${priceDiscount} \
+            | ${priceDiscountEnds} \
             | ${country} \
             |" >> table.md
           done <ids.txt
