@@ -31,7 +31,7 @@ jobs:
           regexDiscount='<span class="badge badge-success">Discount : -([0-9]+)%<\/span>'
           regexOriginalCurrency='pprice price-not-convert-base">([0-9]+)<\/span> .+ (\([a-zA-Z]+\))'
 
-          sumARSOfWantedGames="0.0"
+          sumARSOfWantedGames=0.0
 
           while read gameId; do
             curl \
@@ -82,9 +82,6 @@ jobs:
             multiplier="0.6632"
             realPrice=$(bc -l <<<"${originalCurPrice}*${multiplier}")
 
-            wasSum="${sumARSOfWantedGames}"
-            sumARSOfWantedGames=$(bc -l <<<"${originalCurPrice}+${wasSum}")
-
             echo "| ${gameId} \
             | ${gameName} ${gameYear} \
             | [URL](${checkerURL}) \
@@ -97,12 +94,17 @@ jobs:
             | ${country} \
             |" >> table.md
 
-            echo "\
-            | ${gameName} ${gameYear} \
-            | [URL](https://www.xbox.com/es-AR/games/store/a/${gameId}) \
-            | ${realPrice} ${currency} \
-            | ${originalCur} ${originalCurPrice} \
-            |" >> wanted_table.md
+            if grep -q ${gameId} wanted_ids.txt; then
+              sumARSOfWantedGames=$(bc -l <<<"${originalCurPrice}+${sumARSOfWantedGames}")
+
+              echo "\
+              | ${gameName} ${gameYear} \
+              | [URL](https://www.xbox.com/es-AR/games/store/a/${gameId}) \
+              | ${realPrice} ${currency} \
+              | ${originalCur} ${originalCurPrice} \
+              |" >> wanted_table.md
+            fi
+
 
           done <ids.txt
 
