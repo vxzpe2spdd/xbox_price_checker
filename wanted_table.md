@@ -39,8 +39,8 @@
 | Hard Corps: Uprising (2011)     | [URL](https://www.xbox.com/es-AR/games/store/a/c30z07t9q9ct)     | 54.71400 p.     | ARS 82.5     |
 | Rogue Stormers & Giana Sisters Bundle (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c04lg04zjp6v)     | 16.51368 p.     | ARS 24.9     |
 | Darksiders Genesis (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/brz9553vppbd)     | 124.15104 p.     | ARS 187.2     |
-| Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 15.18728 p.     | ARS 22.9     |
+| Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 151.87280 p.     | ARS 229.0     |
 | Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 105.84672 p.     | ARS 159.6     |
 | Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 49.640520 p.     | ARS 74.85     |
-Sum: 5893.70.
+Sum: 6099.80.
