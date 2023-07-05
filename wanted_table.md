@@ -30,7 +30,7 @@
 | Sonic Adventure (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/c1s8x55l9ss1)     | 18.23800 p.     | ARS 27.5     |
 | Lost Odyssey (2008)     | [URL](https://www.xbox.com/es-AR/games/store/a/bzb4s8fs8t5b)     | 185.03280 p.     | ARS 279.0     |
 | Castle Crashers & Pit People Bundle (2018)     | [URL](https://www.xbox.com/es-AR/games/store/a/bzs8jccjw4r6)     | 198.29680 p.     | ARS 299.0     |
-| Mighty No. 9 (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c1cj25xtkdsb)     | 32.994200 p.     | ARS 49.75     |
+| Mighty No. 9 (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c1cj25xtkdsb)     | 131.97680 p.     | ARS 199.0     |
 | Record of Lodoss War-Deedlit in Wonder Labyrinth- (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nrbh9hs807l)     | 238.08880 p.     | ARS 359.0     |
 | Commandos 2 & Praetorians: HD Remaster Double Pack (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9phmn32nzzt9)     | 284.51280 p.     | ARS 429.0     |
 | Touhou Luna Nights (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nblgjqqbhh4)     | 169.77920 p.     | ARS 256.0     |
@@ -43,4 +43,4 @@
 | Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
 | Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 330.93680 p.     | ARS 499.0     |
-Sum: 7489.50.
+Sum: 7638.75.
