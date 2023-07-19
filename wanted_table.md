@@ -40,7 +40,7 @@
 | Rogue Stormers & Giana Sisters Bundle (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c04lg04zjp6v)     | 165.13680 p.     | ARS 249.0     |
 | Darksiders Genesis (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/brz9553vppbd)     | 413.83680 p.     | ARS 624.0     |
 | Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 151.87280 p.     | ARS 229.0     |
-| Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
+| Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 12.037080 p.     | ARS 18.15     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
 | Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 49.640520 p.     | ARS 74.85     |
-Sum: 7241.64.
+Sum: 7204.79.
