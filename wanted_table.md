@@ -3,10 +3,10 @@
 | FINAL FANTASY XIII (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bsg43bdrn81r)     | 165.13680 p.     | ARS 249.0     |
 | FINAL FANTASY XIII-2 (2012)     | [URL](https://www.xbox.com/es-AR/games/store/a/c4z18b1hm4fz)     | 165.13680 p.     | ARS 249.0     |
 | LIGHTNING RETURNS FFXIII (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/brrsmnbm1qgg)     | 165.13680 p.     | ARS 249.0     |
-| Gal Guardians: Demon Purge (2023)     | [URL](https://www.xbox.com/es-AR/games/store/a/9pbq9gd899zc)     | 238.08880 p.     | ARS 359.0     |
+| Gal Guardians: Demon Purge (2023)     | [URL](https://www.xbox.com/es-AR/games/store/a/9pbq9gd899zc)     | 190.47104 p.     | ARS 287.2     |
 | Bloodstained: Curse of the Moon (2018)     | [URL](https://www.xbox.com/es-AR/games/store/a/btg951rgx7qd)     | 65.65680 p.     | ARS 99.0     |
-| Bloodstained: Curse of the Moon 2 (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9pp77q60x2wq)     | 141.92480 p.     | ARS 214.0     |
-| Blaster Master Zero (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9pmn2bnx3h62)     | 94.17440 p.     | ARS 142.0     |
+| Bloodstained: Curse of the Moon 2 (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9pp77q60x2wq)     | 70.96240 p.     | ARS 107.0     |
+| Blaster Master Zero (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9pmn2bnx3h62)     | 47.08720 p.     | ARS 71.0     |
 | Blaster Master Zero 2 (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9p34qj7qs363)     | 94.17440 p.     | ARS 142.0     |
 | Blaster Master Zero 3 (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n866wl46c4f)     | 141.92480 p.     | ARS 214.0     |
 | Azure Striker GUNVOLT (2022)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nmlwr5shqqr)     | 141.92480 p.     | ARS 214.0     |
@@ -43,4 +43,4 @@
 | Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 12.037080 p.     | ARS 18.15     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
 | Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 49.640520 p.     | ARS 74.85     |
-Sum: 7204.79.
+Sum: 6954.99.
