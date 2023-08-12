@@ -40,7 +40,7 @@
 | Rogue Stormers & Giana Sisters Bundle (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c04lg04zjp6v)     | 165.13680 p.     | ARS 249.0     |
 | Darksiders Genesis (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/brz9553vppbd)     | 124.15104 p.     | ARS 187.2     |
 | Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 151.87280 p.     | ARS 229.0     |
-| Death's Gambit: Afterlife (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
-| Death's Gambit: Afterlife (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
-| Death's Gambit: Afterlife (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 330.93680 p.     | ARS 499.0     |
+| Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
+| CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
+| Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 330.93680 p.     | ARS 499.0     |
 Sum: 7471.2.
