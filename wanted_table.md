@@ -32,7 +32,7 @@
 | Castle Crashers & Pit People Bundle (2018)     | [URL](https://www.xbox.com/es-AR/games/store/a/bzs8jccjw4r6)     | 198.29680 p.     | ARS 299.0     |
 | Mighty No. 9 (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c1cj25xtkdsb)     | 131.97680 p.     | ARS 199.0     |
 | Record of Lodoss War-Deedlit in Wonder Labyrinth- (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nrbh9hs807l)     | 238.08880 p.     | ARS 359.0     |
-| Commandos 2 & Praetorians: HD Remaster Double Pack (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9phmn32nzzt9)     | 284.51280 p.     | ARS 429.0     |
+| Commandos 2 & Praetorians: HD Remaster Double Pack (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9phmn32nzzt9)     | 142.25640 p.     | ARS 214.5     |
 | Touhou Luna Nights (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nblgjqqbhh4)     | 169.77920 p.     | ARS 256.0     |
 | Momodora: Reverie Under the Moonlight (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/bpkqz245cq2h)     | 65.65680 p.     | ARS 99.0     |
 | Blasphemous (2019)     | [URL](https://www.xbox.com/es-AR/games/store/a/9p0478ztxlz4)     | 238.08880 p.     | ARS 359.0     |
@@ -42,5 +42,5 @@
 | Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 151.87280 p.     | ARS 229.0     |
 | Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
-| Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 330.93680 p.     | ARS 499.0     |
-Sum: 7908.0.
+| Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 49.640520 p.     | ARS 74.85     |
+Sum: 7269.35.
