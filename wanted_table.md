@@ -32,15 +32,15 @@
 | Castle Crashers & Pit People Bundle (2018)     | [URL](https://www.xbox.com/es-AR/games/store/a/bzs8jccjw4r6)     | 198.29680 p.     | ARS 299.0     |
 | Mighty No. 9 (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c1cj25xtkdsb)     | 131.97680 p.     | ARS 199.0     |
 | Record of Lodoss War-Deedlit in Wonder Labyrinth- (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nrbh9hs807l)     | 238.08880 p.     | ARS 359.0     |
-| Commandos 2 & Praetorians: HD Remaster Double Pack (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9phmn32nzzt9)     | 142.25640 p.     | ARS 214.5     |
+| Commandos 2 & Praetorians: HD Remaster Double Pack (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9phmn32nzzt9)     | 284.51280 p.     | ARS 429.0     |
 | Touhou Luna Nights (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/9nblgjqqbhh4)     | 169.77920 p.     | ARS 256.0     |
 | Momodora: Reverie Under the Moonlight (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/bpkqz245cq2h)     | 65.65680 p.     | ARS 99.0     |
 | Blasphemous (2019)     | [URL](https://www.xbox.com/es-AR/games/store/a/9p0478ztxlz4)     | 59.522200 p.     | ARS 89.75     |
 | Hard Corps: Uprising (2011)     | [URL](https://www.xbox.com/es-AR/games/store/a/c30z07t9q9ct)     | 54.71400 p.     | ARS 82.5     |
-| Rogue Stormers & Giana Sisters Bundle (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c04lg04zjp6v)     | 16.51368 p.     | ARS 24.9     |
+| Rogue Stormers & Giana Sisters Bundle (2016)     | [URL](https://www.xbox.com/es-AR/games/store/a/c04lg04zjp6v)     | 165.13680 p.     | ARS 249.0     |
 | Darksiders Genesis (2020)     | [URL](https://www.xbox.com/es-AR/games/store/a/brz9553vppbd)     | 413.83680 p.     | ARS 624.0     |
 | Super Dungeon Bros MEGA Bundle Pack (2017)     | [URL](https://www.xbox.com/es-AR/games/store/a/c11nq8c5t057)     | 151.87280 p.     | ARS 229.0     |
 | Castlevania: SOTN (2010)     | [URL](https://www.xbox.com/es-AR/games/store/a/bstm3283756m)     | 36.47600 p.     | ARS 55.0     |
 | CrossCode Deluxe Edition (2021)     | [URL](https://www.xbox.com/es-AR/games/store/a/9n53wx4ks2zw)     | 264.61680 p.     | ARS 399.0     |
 | Lara Croft and the Temple of Osiris (2014)     | [URL](https://www.xbox.com/es-AR/games/store/a/c3553mb4p5tt)     | 330.93680 p.     | ARS 499.0     |
-Sum: 6835.22.
+Sum: 7273.82.
