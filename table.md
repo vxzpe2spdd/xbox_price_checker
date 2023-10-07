@@ -1,6 +1,6 @@
 | ID | Name | Checker URL | Xbox URL | Price | Real Price | Discount | Ends in | Original Cur | Country |
 |-|-|-|-|-|-|-|-|-|-|
-| brs82kmrjtll   | Mega Man 30th Anniversary Bundle (2018)   | [URL](https://xbox-store-checker.com/en/game/compare/a/brs82kmrjtll)   | [URL](https://www.xbox.com/es-AR/games/store/a/brs82kmrjtll)   | 549.83 p.   | 1090.30080 p.   |    | 2023-10-06T02:59:59Z   | ARS 1644.0   | Argentina   |
+| brs82kmrjtll   | Mega Man 30th Anniversary Bundle (2018)   | [URL](https://xbox-store-checker.com/en/game/compare/a/brs82kmrjtll)   | [URL](https://www.xbox.com/es-AR/games/store/a/brs82kmrjtll)   | 3941.02 p.   | 11706.80640 p.   |    | 2023-10-09T23:59:59Z   | ARS 17652.0   | Turkey   |
 | bsg43bdrn81r   | FINAL FANTASY XIII (2010)   | [URL](https://xbox-store-checker.com/en/game/compare/a/bsg43bdrn81r)   | [URL](https://www.xbox.com/es-AR/games/store/a/bsg43bdrn81r)   | 83.67 p.   | 165.13680 p.   |    |    | ARS 249.0   | Argentina   |
 | c4z18b1hm4fz   | FINAL FANTASY XIII-2 (2012)   | [URL](https://xbox-store-checker.com/en/game/compare/a/c4z18b1hm4fz)   | [URL](https://www.xbox.com/es-AR/games/store/a/c4z18b1hm4fz)   | 83.67 p.   | 165.13680 p.   |    |    | ARS 249.0   | Argentina   |
 | brrsmnbm1qgg   | LIGHTNING RETURNS FFXIII (2014)   | [URL](https://xbox-store-checker.com/en/game/compare/a/brrsmnbm1qgg)   | [URL](https://www.xbox.com/es-AR/games/store/a/brrsmnbm1qgg)   | 83.67 p.   | 165.13680 p.   |    |    | ARS 249.0   | Argentina   |
